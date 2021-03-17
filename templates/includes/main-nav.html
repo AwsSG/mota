@@ -18,10 +18,10 @@
                 Flavours
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Fruits</a>
-                <a href="" class="dropdown-item">Nuts</a>
-                <a href="" class="dropdown-item">Classic</a>
-                <a href="" class="dropdown-item">All Flavours</a>
+                <a href="{% url 'products' %}?category=fruits" class="dropdown-item">Fruits</a>
+                <a href="{% url 'products' %}?category=nuts" class="dropdown-item">Nuts</a>
+                <a href="{% url 'products' %}?category=classic" class="dropdown-item">Classic</a>
+                <a href="{% url 'products' %}?category=fruits,nuts,classic" class="dropdown-item">All Flavours</a>
             </div>
         </li>
 
